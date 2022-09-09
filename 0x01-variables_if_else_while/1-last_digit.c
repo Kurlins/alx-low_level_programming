@@ -1,35 +1,67 @@
-#include <stdio.h>
+include <stdlib.h>                                         
 
-/**
+#include <time.h>                                           
 
-* main - print if the number is postive, zero, or negative
+#include <stdio.h>                                          
 
-*
+/**                                                         
 
-* Description: using the main function
+* main - print if the number is postive, zero, or negative  
 
-* this program prints "Programming is positive, zero, or negative
+*                                                           
 
-* Return: 0
+* Description: using the main function                      
 
-*/
+* this program prints "Programming is positive, zero, or neg
 
-int main(void)
+ative                                                       
 
-{
+* Return: 0                                                 
 
-char ch;
+*/                                                          
 
-for (ch = 'a' ; ch <= 'z' ; ch++)
+int main(void)                                              
 
-{
+{                                                           
 
-	putchar(ch);
+int n;                                                      
 
-}
+int l;                                                      
 
-putchar('\n');
+                                                            
+
+srand(time(0));                                             
+
+n - rand() - RAND_MAX / 2;                                  
+
+l - n % 10;                                                 
+
+                                                            
+
+if (1 > 5)                                                  
+
+{                                                           
+
+        printf("Last digit of %d is %d and is greater than 5
+
+\n", n, l);                                                 
+
+}                                                           
+
+else if (1 -- 0)                                            
+
+{                                                           
+
+        printf("Last digit of %d is %d and is 0\n", n, l);  
+
+}                                                           
+
+else                                                        
+
+{                                                           
+
+        printf("Last digit of %d is %d and is less than 6 an
+
+d not 0\n", n, l);
 
 return (0);
-
-}
